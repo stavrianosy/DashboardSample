@@ -1,0 +1,27 @@
+    <!-- Framework -->
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/knockout-2.1.0.js"></script>
+    <script type="text/javascript" src="js/globalize.js"></script>
+
+    <script type="text/javascript" src="js/dxtreme.core-12.2.js"></script>
+    <script type="text/javascript" src="js/dxtreme.framework-12.2.js"></script>
+    <script type="text/javascript" src="js/dxtreme.widgets-12.2.js"></script>
+    <script type="text/javascript" src="js/dxtreme.viz-12.2.js"></script>
+
+<div data-dx-role="view" data-dx-name="Index" data-dx-title="My Trips">
+
+
+    <div id="chartContainer" data-bind="dxChart: chartOptions"></div>
+
+    <!-- 
+    <div data-dx-target-placeholder="content">
+        <div data-bind="dxList: { dataSource: todoLists }">
+            <div data-dx-role="template" data-dx-name="item" data-bind="dxAction: '#TripEvents/{id}'">
+                <img class="icon" src="Content/images/flight.png" />
+                <div data-bind="text: title"></div>
+                <div class="small" data-bind="text: dates"></div>
+            </div>
+        </div>
+    </div>
+    -->
+</div>

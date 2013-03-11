@@ -1,0 +1,7 @@
+{ ActualValue: 1, Category: 'Restored' },
+{ ActualValue: 2, Category: 'Pending QA testing' },
+{ ActualValue: 6, Category: 'Pending UAT testing' },
+{ ActualValue: 17, Category: 'Pending QA Migration' },
+{ ActualValue: 21, Category: 'Pending Customer' },
+{ ActualValue: 56, Category: 'Pending Prod Migration' },
+{ ActualValue: 62, Category: 'Vendor In Hand' }

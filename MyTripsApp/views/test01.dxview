@@ -1,0 +1,25 @@
+<div data-dx-role="view" data-dx-name="test01" data-dx-title="test01">
+    
+    <div data-dx-target-placeholder="content" >
+        
+        <!--
+        <div id="pieChartContainer" data-dx-role="command" style="height:50%; width:50%;float:left;" data-bind="dxPieChart: pieChartOptions"></div>
+        <div id="anotherOne" data-dx-role="command" style="height:50%;width:50%;float:right;" data-bind="dxPieChart: pieChartOptions"></div>
+        <div style="clear: both;"></div>
+        <div id="andAnotherOne" data-dx-role="command" style="height:50%;width:100%;float:right;" data-bind="dxPieChart: pieChartOptions"></div>
+        -->
+
+
+
+        <div id="chartContainer" style="height: 100%" data-bind="dxChart: chartOptions"></div>
+
+
+
+
+
+
+        
+        
+    </div>
+</div>
+

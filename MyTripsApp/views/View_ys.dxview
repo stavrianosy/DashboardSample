@@ -1,0 +1,5 @@
+<div data-dx-role="view" data-dx-name="View_ys" data-dx-title="View_ys">
+    <div data-dx-target-placeholder="content" >
+         <div id="chartContainer" style="height: 100%" data-bind="dxChart: chartOptions"></div>
+     </div>
+</div>
