@@ -19,7 +19,7 @@ var dataSource = [
 
 chartOptions = {
     dataSource: dataSource,
-    theme: 'myTheme',//you need to register the them to work. DevExpress.viz.core.registerTheme(myTheme);
+    //theme: 'myTheme',//## you need to register the them to work. DevExpress.viz.core.registerTheme(myTheme);
     commonSeriesSettings: {
         argumentField: 'Category',
         type: 'bar',
@@ -27,25 +27,43 @@ chartOptions = {
             visible: true,
             format: "fixedPoint",
             precision: 2
-        }
+        } //## label for each bar
     },
     series: [
         { valueField: 'ActualValue', name: 'Value' },
     ],
+    argumentAxis: {
+        label: {
+            font: { color: 'black', size: 16 },
+            overlappingBehavior: { mode: 'rotate', rotationAngle: 60 }
+        }
+    },
     title: {
         position:'rightTop',
         text: 'Sample data'
-    },
+    },    
     legend: {
+        visible:0,//##no need for a legend. only one category
         verticalAlignment: 'bottom',
         horizontalAlignment: 'center'
     },
+    tooltip: {
+        enabled: true,
+        format: 'fixedPoint',
+        precision: 1,
+        customizeText: function(point){
+            return point.argument + ': ' + point.valueText;
+        }
+    },
     pointClick:
         function (point) {
-            //this.select();
-        app.navigate("Index");
-        //$title = 'sasa';
-    }
+            this.select();
+            //alert(point.options.label.position);//ok
+            //alert(point.argument);//ok
+            //alert(point.value);//ok
+            var other = 22;
+            app.navigate("Index/"+ point.argument);
+        }
 }
 
 var myTheme = {

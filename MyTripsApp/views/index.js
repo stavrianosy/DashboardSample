@@ -1,13 +1,10 @@
-﻿//MyTripsApp.Index = function(params) {
+﻿MyTripsApp.Index = function (params) {
+    //var viewModel = {
+    //    //  Put the binding properties here
+    //    //message: "Test"
+    //};
 
-
-//    var viewModel = {
-//        todoLists: {
-//            store: MyTripsApp.db.trips
-//        }
-//    };
-
-//    return viewModel;
-//};
-
-chartOptions = {}
+     //return viewModel;
+    //alert(params.data);
+    return { message: params.id};
+};
