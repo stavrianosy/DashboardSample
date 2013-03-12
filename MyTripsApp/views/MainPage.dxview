@@ -1,0 +1,5 @@
+<div data-dx-role="view" data-dx-name="MainPage" data-dx-title="MainPage">
+    <div data-dx-target-placeholder="content" >
+        <div data-bind="dxTileView: tileOptions" style="text-align:center;"></div>
+    </div>
+</div>

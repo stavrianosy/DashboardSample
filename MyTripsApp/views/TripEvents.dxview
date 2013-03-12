@@ -2,7 +2,7 @@
     <div data-dx-target-placeholder="content">
       <div data-bind="dxList: { items: events }">
         <div data-dx-role="template" data-dx-name="item">
-          <img class="icon" src="Content/images/marker.png"/>
+          <!--<img class="icon" src="Content/images/marker.png"/>-->
           <div data-bind="text: title"></div>
           <div class="small" data-bind="text: date"></div>
         </div>

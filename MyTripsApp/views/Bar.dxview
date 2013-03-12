@@ -1,0 +1,12 @@
+<div data-dx-role="view" data-dx-name="Bar" data-dx-title="Bar Chart">
+    <div data-dx-target-placeholder="content">
+        <div style="height:90%" id="chartContainer" data-bind="dxChart: chartOptions"></div>
+          <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label">Graph selection:</div>
+                <div class="dx-field-value" data-bind="dxLookup: { dataSource: colors, selectedValue: selectedColor, valueExpr: 'value', displayExpr: 'text' }"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

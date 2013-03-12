@@ -1,10 +1,7 @@
 ﻿MyTripsApp.Index = function (params) {
-    //var viewModel = {
-    //    //  Put the binding properties here
-    //    //message: "Test"
-    //};
+    var viewModel = {
+        message: params.id
+    };
 
-     //return viewModel;
-    //alert(params.data);
-    return { message: params.id};
+     return viewModel;
 };
