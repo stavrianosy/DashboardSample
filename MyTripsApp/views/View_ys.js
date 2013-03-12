@@ -61,11 +61,29 @@ chartOptions = {
             //alert(point.options.label.position);//ok
             //alert(point.argument);//ok
             //alert(point.value);//ok
-            var other = 22;
-            app.navigate("Index/"+ point.argument);
+            app.navigate("Index/" + ReadParam(point.argument + "{" + point.value + "}"));
         }
 }
 
 var myTheme = {
     name: 'mySuperTheme',
+}
+
+function ReadParam(param)
+{
+    var result = "Parameter is not well formated";
+
+    try
+    {
+        var value = param.substring(param.indexOf('{') + 1, param.indexOf('}'));
+        var key = param.substring(0, param.indexOf('{'));
+
+        result = "key=" + key + ", value=" + value;
+    }
+    catch(err)
+    {
+        result += ' ' + err.message;
+    }
+
+    return result;
 }
