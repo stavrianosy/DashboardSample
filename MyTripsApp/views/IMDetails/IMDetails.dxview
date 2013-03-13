@@ -1,0 +1,66 @@
+<div data-dx-role="view" data-dx-name="IMDetails" data-dx-title="IMDetails">
+    <div data-dx-target-placeholder="content">
+        <div class="leftContainer">
+            <div style="padding: 0px 20px 0px 10px;">
+            <div class="dx-field">
+                <div class="dx-field-label">IncidentID</div>
+                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtIncidentID }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Severity Code</div>
+                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtSeverityCode }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Open Time</div>
+                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtOpenTime }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Environment</div>
+                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtEnvironment }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Problem Type</div>
+                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtProblemType }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Problem Status</div>
+                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtProblemStatus }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Product Type</div>
+                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtProductType }"></div>
+            </div>
+        </div>
+            </div>
+        <div class="rightContainer">
+            <div style="padding: 0px 10px 0px 20px;">
+            <div class="dx-field">
+                <div class="dx-field-label">Brief Description</div>
+                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtBriefDescription }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Primary Assignment</div>
+                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtPrimaryAssignment }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Ned Report Back</div>
+                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtNedReportBack }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Close Time</div>
+                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtCloseTime }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Resolution Code</div>
+                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtResolutionCode }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Open For</div>
+                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtOpenForDescription }"></div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+</div>

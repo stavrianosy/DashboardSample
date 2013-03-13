@@ -1,0 +1,12 @@
+﻿/* Put css styles for IMList view here */
+.leftContent {
+    float: left;
+    width: 65%;
+    height:100%;
+}
+
+.rightContent {
+    float:left;
+    width:35%;
+    height:100%;
+}

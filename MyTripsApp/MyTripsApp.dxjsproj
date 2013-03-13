@@ -36,7 +36,16 @@
     <Content Include="css\dxtreme.win8.black-12.2.css" />
     <Content Include="css\dxtreme.win8.white-12.2.css" />
     <Content Include="css\dxtreme.win8.black.small-12.2.css" />
+    <Content Include="css\style.css">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="data\db.js" />
+    <Content Include="data\SelectedBar.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\jquery-1.7.2.intellisense.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="layouts\Navbar\NavbarLayout.css" />
     <Content Include="layouts\Navbar\NavbarLayout.html" />
     <Content Include="js\dxtreme.core-12.2.js" />
@@ -44,14 +53,58 @@
     <Content Include="js\dxtreme.widgets-12.2.js" />
     <Content Include="js\dxtreme.viz-12.2.js" />
     <Content Include="js\globalize.js" />
-    <Content Include="js\jquery-1.7.2.intellisense.js" />
     <Content Include="js\jquery-1.7.2.min.js" />
     <Content Include="js\knockout-2.1.0.js" />
+    <Content Include="views\Dashboard.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\Dashboard.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\Dashboard.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\Graphs\Bar.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\Graphs\Bar.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\Graphs\Bar.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\IMDetails\IMDetails.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\IMDetails\IMDetails.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\IMDetails\IMDetails.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\IMList\IMList.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\IMList\IMList.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\IMList\IMList.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="views\index.dxview" />
     <Content Include="views\index.css" />
     <Content Include="views\index.js" />
     <Content Include="views\about.html" />
     <Content Include="app.config.js" />
+    <Content Include="views\MainPage.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\MainPage.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\MainPage.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="views\test01.css">
       <SubType>Content</SubType>
     </Content>
@@ -70,15 +123,6 @@
     <Content Include="views\TripEvents.js">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="views\View_ys.css">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="views\View_ys.dxview">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="views\View_ys.js">
-      <SubType>Content</SubType>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="content\images" />
@@ -89,6 +133,9 @@
     <Folder Include="layouts\Navbar\" />
     <Folder Include="content" />
     <Folder Include="views\" />
+    <Folder Include="views\IMList" />
+    <Folder Include="views\IMDetails" />
+    <Folder Include="views\Graphs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <Target Name="Build">

@@ -1,20 +1,21 @@
 ﻿MyTripsApp.Bar = function (params) {
 
-    var dataSource = null;
+    var data = null;
     var graphIndex = params.id ? parseInt(params.id) : 0;
+    //var barSelected = new DevExpress.data.ArrayStore({ key: "id", data: [] });
 
     switch (graphIndex) {
         case 0:
-            dataSource = { store: MyTripsApp.db.graphPerSeverity };
+            data = { store: MyTripsApp.db.graphPerSeverity };
             break;
         case 1:
-            dataSource = { store: MyTripsApp.db.graphPerProblemStatus };
+            data = { store: MyTripsApp.db.graphPerProblemStatus };
             break;
         case 2:
-            dataSource = { store: MyTripsApp.db.graphPerProductType };
+            data = { store: MyTripsApp.db.graphPerProductType };
             break;
         case 3:
-            dataSource = { store: MyTripsApp.db.graphPerPrimaryAssignment };
+            data = { store: MyTripsApp.db.graphPerPrimaryAssignment };
             break;
         default:
             break;
@@ -26,7 +27,7 @@
         selectedColor: ko.observable(graphIndex),
 
         chartOptions: {
-            dataSource: dataSource,
+            dataSource: data,
             //theme: 'myTheme',//## you need to register the them to work. DevExpress.viz.core.registerTheme(myTheme);
             commonSeriesSettings: {
                 argumentField: 'Category',
@@ -69,7 +70,8 @@
                     //alert(point.options.label.position);//ok
                     //alert(point.argument);//ok
                     //alert(point.value);//ok
-                    app.navigate("Index/" + ReadParam(point.argument + "{" + point.value + "}"));
+                    //app.navigate("IMList/" + ReadParam(point.argument + "{" + point.value + "}"));
+                    app.navigate("IMList/" + GetSelectedBar("severity", point.argument, point.value));
                 }
         }
     }
@@ -86,6 +88,16 @@
 
 var myTheme = {
     name: 'mySuperTheme',
+}
+
+function GetSelectedBar(chartName, argiment, value)
+{
+    var barSelected = new SelectedBar();
+    barSelected.Chart = chartName;
+    barSelected.Name = argiment
+    barSelected.Value = value ;
+    
+    return JSON.stringify(barSelected);
 }
 
 function ReadParam(param)
@@ -105,4 +117,11 @@ function ReadParam(param)
     }
 
     return result;
+}
+
+//Object definitions
+function SelectedBar() {
+    this.Chart;
+    this.Name;
+    this.Value;
 }

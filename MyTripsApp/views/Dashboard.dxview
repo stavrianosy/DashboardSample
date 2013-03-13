@@ -1,0 +1,18 @@
+<div data-dx-role="view" data-dx-name="Dashboard" data-dx-title="Dashboard">
+    <div data-dx-target-placeholder="content" >
+        <div id="topLeft">
+            <div id="chartContainer" data-bind="dxChart: chartOptsSeverity"></div>
+        </div>
+        <div id="topRight">
+            <div id="chartContainer" data-bind="dxChart: chartOptsProblemSatus"></div>        
+        </div>
+        <div style="clear:both">
+        </div>
+        <div id="bottomLeft">
+            <div id="chartContainer" data-bind="dxChart: chartOptsProductType"></div>        
+        </div>
+        <div id="bottomRight">
+            <div id="chartContainer" data-bind="dxPieChart: chartOptsPrimaryAssignment"></div>        
+        </div>
+    </div>
+</div>

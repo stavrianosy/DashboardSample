@@ -1,0 +1,16 @@
+<div data-dx-role="view" data-dx-name="IMList" data-dx-title="IMList">
+    <div data-dx-target-placeholder="content" >
+        <div class="leftContent" >
+            <div style="height:50%;padding:5px;" data-bind="dxChart: chartOptions"></div>
+            <div style="height:50%;padding:5px;" data-bind="dxPieChart: chartOptionsPie"></div>
+        </div>
+        <div class="rightContent">
+        <div data-bind="dxList: { dataSource: itemList, itemClick: showItemText, pullDown: true }">
+          <div data-dx-role="template" data-dx-name="item">
+            <div data-bind="text: name"></div>
+          </div>
+        </div>
+            </div>
+            <div style="clear:left"></div>
+    </div>
+</div>

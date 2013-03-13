@@ -1,0 +1,12 @@
+﻿/* Put css styles for IMDetails view here */
+.leftContainer {
+width: 50%; 
+float: left;
+}
+.rightContainer {
+width: 50%; 
+float: right;
+}
+.dx-field-value {
+    width:100%
+}
