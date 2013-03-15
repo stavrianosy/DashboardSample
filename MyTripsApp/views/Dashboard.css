@@ -1,25 +1,45 @@
 ﻿/* Put css styles for Dashboard view here */
-#topLeft {
+.top_2 {
     width:50%;
     height:50%;
     float:left;
     text-align:center;
 }
-#topRight {
+.bottom_2 {
     width:50%;
     height:50%;
     float:left;
     text-align:center;
 }
-#bottomLeft {
-    width:50%;
+.top_3 {
+    width:33.1%;
     height:50%;
     float:left;
     text-align:center;
+    margin:1px;
 }
-#bottomRight {
-    width:50%;
+.bottom_1 {
+    width:99.7%;
+    height:49%;
+    float:left;
+    text-align:center;
+    margin:1px;
+}
+.bottom_wide80 {
+    width:80%;
+    height:49.5%;
+    float:left;
+    text-align:center;
+    margin:1px;
+}
+.bottom_wide20 {
+    width:19.5%;
     height:50%;
     float:left;
     text-align:center;
+    margin:1px;
+}
+.bottom_wide20 .dx-field-label {
+    text-align:left;
+    padding-right:10px;
 }

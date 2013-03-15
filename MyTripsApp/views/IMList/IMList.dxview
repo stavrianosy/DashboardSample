@@ -1,16 +1,23 @@
 <div data-dx-role="view" data-dx-name="IMList" data-dx-title="IMList">
-    <div data-dx-target-placeholder="content" >
-        <div class="leftContent" >
-            <div style="height:50%;padding:5px;" data-bind="dxChart: chartOptions"></div>
-            <div style="height:50%;padding:5px;" data-bind="dxPieChart: chartOptionsPie"></div>
+    <div data-dx-target-placeholder="content" data-dx-transition="slide">
+        <div class="leftContent">
+            <div id="barChart" data-bind="visible: barChartVisible">
+                <div style="height:100%;" data-bind="dxChart: chartOptions"></div>
+            </div>
+            <div id="pieChart" data-bind="visible: pieChartVisible" >
+                <div style="height:100%;" data-bind="dxPieChart: chartOptionsPie"></div>
+            </div>
         </div>
         <div class="rightContent">
-        <div data-bind="dxList: { dataSource: itemList, itemClick: showItemText, pullDown: true }">
-          <div data-dx-role="template" data-dx-name="item">
-            <div data-bind="text: name"></div>
-          </div>
-        </div>
+            <div data-bind="dxList: { dataSource: IMs, itemClick: showItemText, pullDown: true }">
+              <div data-dx-role="template" data-dx-name="item">
+                <div style="font-weight:bold;float:left" data-bind="text: IncidentId"></div>
+                  <div style="font-weight:bold;float:left">:</div>
+                  <div style="clear:both"></div>
+                <div data-bind="text: OpenTime"></div>
+              </div>
             </div>
-            <div style="clear:left"></div>
+         </div>
+         <div style="clear:left"></div>
     </div>
 </div>

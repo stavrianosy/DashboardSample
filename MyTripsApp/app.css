@@ -1,5 +1,11 @@
 ﻿html, 
 body, 
+
+.dx-theme-ios-typography {
+    background-image:none;
+    /*background-color:#fff;*/
+}
+
 #viewPort {
     height: 100%;
 }

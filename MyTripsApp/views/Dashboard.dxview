@@ -1,18 +1,35 @@
 <div data-dx-role="view" data-dx-name="Dashboard" data-dx-title="Dashboard">
     <div data-dx-target-placeholder="content" >
-        <div id="topLeft">
-            <div id="chartContainer" data-bind="dxChart: chartOptsSeverity"></div>
+        <div class="top_3">
+            <div style="border:dotted 1px #000;" id="chartContainer" data-bind="dxChart: chartOptsSeverity"></div>
         </div>
-        <div id="topRight">
-            <div id="chartContainer" data-bind="dxChart: chartOptsProblemSatus"></div>        
+        <div class="top_3">
+            <div style="border:dotted 1px #000;" id="chartContainer" data-bind="dxChart: chartOptsProblemSatus"></div>        
         </div>
-        <div style="clear:both">
+        <div class="top_3">
+            <div style="border:dotted 1px #000;" id="chartContainer" data-bind="dxPieChart: chartOptsPrimaryAssignment"></div>        
         </div>
-        <div id="bottomLeft">
-            <div id="chartContainer" data-bind="dxChart: chartOptsProductType"></div>        
+        <div style="clear:both"></div>
+        <div class="bottom_wide80">
+            <div style="border:dotted 1px #000;" id="chartContainer" data-bind="dxChart: chartOptsProductType"></div>        
         </div>
-        <div id="bottomRight">
-            <div id="chartContainer" data-bind="dxPieChart: chartOptsPrimaryAssignment"></div>        
+        <div class="bottom_wide20">
+            <div class="dx-fieldset">
+              <div class="dx-field">
+                <div class="dx-field-label" style="max-width:100%;">Total Open Incidents</div>
+              </div>
+                <div class="dx-field">
+                <div class="dx-field-label" style="font-weight:normal"><div>From:</div></div>
+                <div class="dx-field-label" style="max-width:70%;font-weight:normal;">
+                    <div data-bind="text: firstIncidentDate"></div>
+                </div>
+              </div>
+                <div class="dx-field">
+                <div class="dx-field-label" style="max-width:100%;width:100%;text-align:center;font-size:30px">
+                <div data-bind="text: countIncidents"></div></div>
+              </div>
+            </div>
         </div>
+        <div style="clear:both"></div>
     </div>
 </div>

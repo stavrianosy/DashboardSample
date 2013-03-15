@@ -4,31 +4,31 @@
             <div style="padding: 0px 20px 0px 10px;">
             <div class="dx-field">
                 <div class="dx-field-label">IncidentID</div>
-                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtIncidentID }"></div>
+                <div class="dx-field-value" data-bind="text:txtIncidentID"></div>
             </div>
             <div class="dx-field">
                 <div class="dx-field-label">Severity Code</div>
-                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtSeverityCode }"></div>
+                <div class="dx-field-value" data-bind="text: txtSeverityCode"></div>
             </div>
             <div class="dx-field">
                 <div class="dx-field-label">Open Time</div>
-                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtOpenTime }"></div>
+                <div class="dx-field-value" data-bind="text: txtOpenTime "></div>
             </div>
             <div class="dx-field">
                 <div class="dx-field-label">Environment</div>
-                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtEnvironment }"></div>
+                <div class="dx-field-value" data-bind="text: txtEnvironment"></div>
             </div>
             <div class="dx-field">
                 <div class="dx-field-label">Problem Type</div>
-                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtProblemType }"></div>
+                <div class="dx-field-value" data-bind="text: txtProblemType"></div>
             </div>
             <div class="dx-field">
                 <div class="dx-field-label">Problem Status</div>
-                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtProblemStatus }"></div>
+                <div class="dx-field-value" data-bind="text: txtProblemStatus"></div>
             </div>
             <div class="dx-field">
                 <div class="dx-field-label">Product Type</div>
-                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtProductType }"></div>
+                <div class="dx-field-value" data-bind="text: txtProductType"></div>
             </div>
         </div>
             </div>
@@ -36,27 +36,27 @@
             <div style="padding: 0px 10px 0px 20px;">
             <div class="dx-field">
                 <div class="dx-field-label">Brief Description</div>
-                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtBriefDescription }"></div>
+                <div class="dx-field-value" data-bind="text: txtBriefDescription"></div>
             </div>
             <div class="dx-field">
                 <div class="dx-field-label">Primary Assignment</div>
-                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtPrimaryAssignment }"></div>
+                <div class="dx-field-value" data-bind="text: txtPrimaryAssignment"></div>
             </div>
             <div class="dx-field">
                 <div class="dx-field-label">Ned Report Back</div>
-                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtNedReportBack }"></div>
+                <div class="dx-field-value" data-bind="text: txtNedReportBack"></div>
             </div>
             <div class="dx-field">
                 <div class="dx-field-label">Close Time</div>
-                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtCloseTime }"></div>
+                <div class="dx-field-value" data-bind="text: txtCloseTime"></div>
             </div>
             <div class="dx-field">
                 <div class="dx-field-label">Resolution Code</div>
-                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtResolutionCode }"></div>
+                <div class="dx-field-value" data-bind="text: txtResolutionCode"></div>
             </div>
             <div class="dx-field">
                 <div class="dx-field-label">Open For</div>
-                <div class="dx-field-value" data-bind="dxTextbox: { readonly: true, value: txtOpenForDescription }"></div>
+                <div class="dx-field-value" data-bind="text: txtOpenForDescription"></div>
             </div>
             </div>
             </div>

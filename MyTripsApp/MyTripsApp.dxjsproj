@@ -30,6 +30,9 @@
     <Content Include="content\images\flight.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="content\images\splash_logo.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="css\dxtreme.android.holo-dark-12.2.css" />
     <Content Include="css\dxtreme.desktop.default-12.2.css" />
     <Content Include="css\dxtreme.ios.default-12.2.css" />
@@ -40,10 +43,19 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="data\db.js" />
+    <Content Include="data\Incident.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="data\SelectedBar.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="js\jquery-1.7.2.intellisense.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="layouts\MyLayout\MyLayout.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="layouts\MyLayout\MyLayout.html">
       <SubType>Content</SubType>
     </Content>
     <Content Include="layouts\Navbar\NavbarLayout.css" />
@@ -94,35 +106,7 @@
     <Content Include="views\index.dxview" />
     <Content Include="views\index.css" />
     <Content Include="views\index.js" />
-    <Content Include="views\about.html" />
     <Content Include="app.config.js" />
-    <Content Include="views\MainPage.css">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="views\MainPage.dxview">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="views\MainPage.js">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="views\test01.css">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="views\test01.dxview">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="views\test01.js">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="views\TripEvents.css">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="views\TripEvents.dxview">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="views\TripEvents.js">
-      <SubType>Content</SubType>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="content\images" />
@@ -132,6 +116,7 @@
     <Folder Include="layouts\" />
     <Folder Include="layouts\Navbar\" />
     <Folder Include="content" />
+    <Folder Include="layouts\MyLayout" />
     <Folder Include="views\" />
     <Folder Include="views\IMList" />
     <Folder Include="views\IMDetails" />

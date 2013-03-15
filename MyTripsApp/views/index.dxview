@@ -8,22 +8,11 @@
     <script type="text/javascript" src="js/dxtreme.widgets-12.2.js"></script>
     <script type="text/javascript" src="js/dxtreme.viz-12.2.js"></script>
 
-    <div data-dx-role="view" data-dx-name="Index" data-dx-title="My Trips">
-        <div data-dx-target-placeholder="content" >
-        <h1 data-bind="text: message"></h1>
-
-        <!-- <div id="chartContainer" data-bind="dxChart: chartOptions"></div> -->
-
-        <!-- 
-        <div data-dx-target-placeholder="content">
-            <div data-bind="dxList: { dataSource: todoLists }">
-                <div data-dx-role="template" data-dx-name="item" data-bind="dxAction: '#TripEvents/{id}'">
-                    <img class="icon" src="Content/images/flight.png" />
-                    <div data-bind="text: title"></div>
-                    <div class="small" data-bind="text: dates"></div>
-                </div>
-            </div>
+<div data-dx-role="view" data-dx-name="Index" data-dx-title="My Trips" data-dx-layout="empty" >
+    <div data-dx-target-placeholder="content" >
+        <div data-bind="click:navigate">
+                <img src="/content/images/splash_logo.png" width="100%"/>            
+            </div>  
         </div>
-        -->
     </div>
 </div>

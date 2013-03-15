@@ -37,44 +37,29 @@
     <script type="text/javascript" src="data/SelectedBar.js"></script>
     <script type="text/javascript" src="data/Incident.js"></script>
     
+    <script>
+        $(function () {
+            app.navigate();
+        });
+    </script>
+
     <!-- Layouts -->
     <link rel="stylesheet" type="text/css" href="layouts/Navbar/NavbarLayout.css" />
     <link rel="dx-template" type="text/html" href="layouts/Navbar/NavbarLayout.html"/>    
+
+    <link rel="stylesheet" type="text/css" href="layouts/Empty/EmptyLayout.css" />
+    <link rel="dx-template" type="text/html" href="layouts/Empty/EmptyLayout.html"/>    
 
     <!-- Views -->
     <script type="text/javascript" src="views/index.js"></script>
     <link rel="dx-template" type="text/html" href="views/index.dxview"/>
     <link rel="stylesheet" type="text/css" href="views/index.css"/>
 
-    <script>
-        $(function() {
-        app.navigate();
-        });
-    </script>
-
-		<script type="text/javascript" src="views/TripEvents.js"></script>
-		<link rel="dx-template" type="text/html" href="views/TripEvents.dxview"/>
-		<link rel="stylesheet" type="text/css" href="views/TripEvents.css"/>
-
-		<script type="text/javascript" src="views/test01.js"></script>
-		<link rel="dx-template" type="text/html" href="views/test01.dxview"/>
-		<link rel="stylesheet" type="text/css" href="views/test01.css"/>
-
-
-		<script type="text/javascript" src="views/Graphs/Bar.js"></script>
-		<link rel="dx-template" type="text/html" href="views/Graphs/Bar.dxview"/>
-		<link rel="stylesheet" type="text/css" href="views/Graphs/Bar.css"/>
-
-
-		<script type="text/javascript" src="views/MainPage.js"></script>
-		<link rel="dx-template" type="text/html" href="views/MainPage.dxview"/>
-		<link rel="stylesheet" type="text/css" href="views/MainPage.css"/>
-
-    <script type="text/javascript" src="views/IMList/IMList.js"></script>
+        <script type="text/javascript" src="views/IMList/IMList.js"></script>
 		<link rel="dx-template" type="text/html" href="views/IMList/IMList.dxview"/>
 		<link rel="stylesheet" type="text/css" href="views/IMList/IMList.css"/>
 
-    <script type="text/javascript" src="views/IMDetails/IMDetails.js"></script>
+        <script type="text/javascript" src="views/IMDetails/IMDetails.js"></script>
 		<link rel="dx-template" type="text/html" href="views/IMDetails/IMDetails.dxview"/>
 		<link rel="stylesheet" type="text/css" href="views/IMDetails/IMDetails.css"/>
 
